@@ -1,0 +1,855 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 13 22:29:15 2024
+# Process ID: 12156
+# Current directory: C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1
+# Command line: vivado.exe -log system_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_design_wrapper.tcl -notrace
+# Log file: C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1/system_design_wrapper.vdi
+# Journal file: C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_design_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: link_design -top system_design_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_audio_formatter_0_0/system_design_audio_formatter_0_0.dcp' for cell 'system_design_i/audio_formatter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_proc_sys_reset_0_0/system_design_proc_sys_reset_0_0.dcp' for cell 'system_design_i/audio_reset'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_0_0/system_design_clk_wiz_0_0.dcp' for cell 'system_design_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_1_0/system_design_clk_wiz_1_0.dcp' for cell 'system_design_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_i2s_receiver_0_0/system_design_i2s_receiver_0_0.dcp' for cell 'system_design_i/i2s_receiver_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_i2s_transmitter_0_0/system_design_i2s_transmitter_0_0.dcp' for cell 'system_design_i/i2s_transmitter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_processing_system7_0_0/system_design_processing_system7_0_0.dcp' for cell 'system_design_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_rst_ps7_0_49M_2/system_design_rst_ps7_0_49M_2.dcp' for cell 'system_design_i/rst_ps7_0_49M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_xbar_1/system_design_xbar_1.dcp' for cell 'system_design_i/mem_interconnect/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_auto_pc_1/system_design_auto_pc_1.dcp' for cell 'system_design_i/mem_interconnect/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_auto_us_0/system_design_auto_us_0.dcp' for cell 'system_design_i/mem_interconnect/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_auto_us_1/system_design_auto_us_1.dcp' for cell 'system_design_i/mem_interconnect/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_xbar_0/system_design_xbar_0.dcp' for cell 'system_design_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_auto_pc_0/system_design_auto_pc_0.dcp' for cell 'system_design_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 374 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_design_i/clk_wiz_0/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_design_i/clk_wiz_1/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_design_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_design_i/clk_wiz_1/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_processing_system7_0_0/system_design_processing_system7_0_0.xdc] for cell 'system_design_i/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.607500 which will be rounded to 0.608 to ensure it is an integer multiple of 1 picosecond [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_processing_system7_0_0/system_design_processing_system7_0_0.xdc:21]
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_processing_system7_0_0/system_design_processing_system7_0_0.xdc] for cell 'system_design_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_audio_formatter_0_0/system_design_audio_formatter_0_0.xdc] for cell 'system_design_i/audio_formatter_0/inst'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_audio_formatter_0_0/system_design_audio_formatter_0_0.xdc] for cell 'system_design_i/audio_formatter_0/inst'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_rst_ps7_0_49M_2/system_design_rst_ps7_0_49M_2_board.xdc] for cell 'system_design_i/rst_ps7_0_49M/U0'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_rst_ps7_0_49M_2/system_design_rst_ps7_0_49M_2_board.xdc] for cell 'system_design_i/rst_ps7_0_49M/U0'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_rst_ps7_0_49M_2/system_design_rst_ps7_0_49M_2.xdc] for cell 'system_design_i/rst_ps7_0_49M/U0'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_rst_ps7_0_49M_2/system_design_rst_ps7_0_49M_2.xdc] for cell 'system_design_i/rst_ps7_0_49M/U0'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_proc_sys_reset_0_0/system_design_proc_sys_reset_0_0_board.xdc] for cell 'system_design_i/audio_reset/U0'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_proc_sys_reset_0_0/system_design_proc_sys_reset_0_0_board.xdc] for cell 'system_design_i/audio_reset/U0'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_proc_sys_reset_0_0/system_design_proc_sys_reset_0_0.xdc] for cell 'system_design_i/audio_reset/U0'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_proc_sys_reset_0_0/system_design_proc_sys_reset_0_0.xdc] for cell 'system_design_i/audio_reset/U0'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_1_0/system_design_clk_wiz_1_0_board.xdc] for cell 'system_design_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_1_0/system_design_clk_wiz_1_0_board.xdc] for cell 'system_design_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_1_0/system_design_clk_wiz_1_0.xdc] for cell 'system_design_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_1_0/system_design_clk_wiz_1_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_1_0/system_design_clk_wiz_1_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1332.527 ; gain = 570.215
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.202490 which will be rounded to 0.202 to ensure it is an integer multiple of 1 picosecond [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_1_0/system_design_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_1_0/system_design_clk_wiz_1_0.xdc] for cell 'system_design_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_0_0/system_design_clk_wiz_0_0_board.xdc] for cell 'system_design_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_0_0/system_design_clk_wiz_0_0_board.xdc] for cell 'system_design_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_0_0/system_design_clk_wiz_0_0.xdc] for cell 'system_design_i/clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_0_0/system_design_clk_wiz_0_0.xdc:57]
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.099980 which will be rounded to 0.100 to ensure it is an integer multiple of 1 picosecond [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_0_0/system_design_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_clk_wiz_0_0/system_design_clk_wiz_0_0.xdc] for cell 'system_design_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/constrs_1/new/constr.xdc]
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_auto_us_0/system_design_auto_us_0_clocks.xdc] for cell 'system_design_i/mem_interconnect/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_auto_us_0/system_design_auto_us_0_clocks.xdc] for cell 'system_design_i/mem_interconnect/s00_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_auto_us_1/system_design_auto_us_1_clocks.xdc] for cell 'system_design_i/mem_interconnect/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_auto_us_1/system_design_auto_us_1_clocks.xdc] for cell 'system_design_i/mem_interconnect/s01_couplers/auto_us/inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/xpm_cdc_array_multiplier'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/xpm_cdc_array_multiplier'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/genblk1[0].CDC_CHMUX_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/genblk1[0].CDC_CHMUX_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_SCLKDIV_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_SCLKDIV_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/genblk1[0].CDC_CHMUX_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/genblk1[0].CDC_CHMUX_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_SCLKDIV_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_SCLKDIV_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTS_INST'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTS_INST' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTS_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.xpm_cdc_async_mm2s_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.xpm_cdc_async_mm2s_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.xpm_cdc_async_s2mm_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_MRST_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_MRST_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CDC_START_DMA_AUD_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/CDC_START_DMA_AUD_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/CDC_SAMPLE_PULSE_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/CDC_SAMPLE_PULSE_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_LR_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_LR_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_OPMODE_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_OPMODE_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_MCLK_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_MCLK_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCAPTCHSTS_INST/xpm_cdc_single_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCAPTCHSTS_INST/xpm_cdc_single_inst' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCAPTCHSTS_INST/xpm_cdc_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCAPTCHSTS_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AUDOVF_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AUDOVF_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_VALIDITY_AXISCLK_INST'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_VALIDITY_AXISCLK_INST' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_VALIDITY_AXISCLK_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_VALIDITY_AXISCLK_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_ENABLE_MCLK_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_ENABLE_MCLK_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_JUSTIFY_MCLK_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_JUSTIFY_MCLK_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_LR_MCLK_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_LR_MCLK_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTSUPD_INST/xpm_cdc_single_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTSUPD_INST/xpm_cdc_single_inst' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTSUPD_INST/xpm_cdc_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTSUPD_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AUDUFLOW_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AUDUFLOW_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESBSYNCERR_INST/xpm_cdc_single_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESBSYNCERR_INST/xpm_cdc_single_inst' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESBSYNCERR_INST/xpm_cdc_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESBSYNCERR_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCLRCHSTS_INST/xpm_cdc_single_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCLRCHSTS_INST/xpm_cdc_single_inst' of design 'design_1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCLRCHSTS_INST/xpm_cdc_single_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCLRCHSTS_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/INTERLEAVED.second_level_xpm_fifo_buffer'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/INTERLEAVED.second_level_xpm_fifo_buffer'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/INTERLEAVED.interleaved_xpm_fifo_buffer'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/INTERLEAVED.interleaved_xpm_fifo_buffer'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1332.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 14 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+39 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.527 ; gain = 1009.262
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.618 . Memory (MB): peak = 1332.527 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 248a7268f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.579 . Memory (MB): peak = 1332.527 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: cd8c6426
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.664 . Memory (MB): peak = 1434.766 ; gain = 0.961
+INFO: [Opt 31-389] Phase Retarget created 35 cells and removed 87 cells
+INFO: [Opt 31-1021] In phase Retarget, 7 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 10 load pin(s).
+Phase 2 Constant propagation | Checksum: e12cddf2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1434.766 ; gain = 0.961
+INFO: [Opt 31-389] Phase Constant propagation created 228 cells and removed 611 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 6 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 15cfdc602
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1434.766 ; gain = 0.961
+INFO: [Opt 31-389] Phase Sweep created 3 cells and removed 913 cells
+INFO: [Opt 31-1021] In phase Sweep, 78 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 15cfdc602
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1434.766 ; gain = 0.961
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 15cfdc602
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1434.766 ; gain = 0.961
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 15cfdc602
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1434.766 ; gain = 0.961
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 15 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              35  |              87  |                                              7  |
+|  Constant propagation         |             228  |             611  |                                              6  |
+|  Sweep                        |               3  |             913  |                                             78  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             15  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1434.766 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: d6fc7960
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1434.766 ; gain = 0.961
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=13.073 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 5 newly gated: 0 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: a8baca42
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Ending Power Optimization Task | Checksum: a8baca42
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1689.781 ; gain = 255.016
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: a8baca42
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 15590f5a2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1689.781 ; gain = 357.254
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1/system_design_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file system_design_wrapper_drc_opted.rpt -pb system_design_wrapper_drc_opted.pb -rpx system_design_wrapper_drc_opted.rpx
+Command: report_drc -file system_design_wrapper_drc_opted.rpt -pb system_design_wrapper_drc_opted.pb -rpx system_design_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1/system_design_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: a8915846
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 33dc9083
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1505ace17
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1505ace17
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1505ace17
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 17e351d0f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 17ed38a6d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 1396570b3
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1396570b3
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 14ed9d1dc
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e0223be4
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 16d104d32
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 2055664dc
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 14fc0082b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 12234e6d2
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1dc0c2a6c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1dc0c2a6c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 21a175924
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 21a175924
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=11.069. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1f07de22b
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1f07de22b
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1f07de22b
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1f07de22b
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1d041fc4d
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1d041fc4d
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Ending Placer Task | Checksum: 10c5486b7
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.933 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1/system_design_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file system_design_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file system_design_wrapper_utilization_placed.rpt -pb system_design_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_design_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.321 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 56d9f617 ConstDB: 0 ShapeSum: b57a90a0 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 14272b43a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 79880d2d NumContArr: c8eaa70d Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 14272b43a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 14272b43a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 14272b43a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1689.781 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: cf4fa682
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.174 | TNS=0.000  | WHS=-0.243 | THS=-227.874|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: a8baf786
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.174 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 101cf0ff3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 56534b85
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 11911
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 11911
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 181a7c7fc
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 924
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.314  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 205b7f32d
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.314  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 15cf720a4
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 15cf720a4
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: f01a23e2
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.314  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 18bd9c6ba
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 18bd9c6ba
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 18bd9c6ba
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: e45dcfa3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.314  | TNS=0.000  | WHS=0.014  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: f3d233ae
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: f3d233ae
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.84825 %
+  Global Horizontal Routing Utilization  = 6.60202 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1a125aefd
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1a125aefd
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2646ce783
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=7.314  | TNS=0.000  | WHS=0.014  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 2646ce783
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1689.781 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+113 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1689.781 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1689.781 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1/system_design_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file system_design_wrapper_drc_routed.rpt -pb system_design_wrapper_drc_routed.pb -rpx system_design_wrapper_drc_routed.rpx
+Command: report_drc -file system_design_wrapper_drc_routed.rpt -pb system_design_wrapper_drc_routed.pb -rpx system_design_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1/system_design_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file system_design_wrapper_methodology_drc_routed.rpt -pb system_design_wrapper_methodology_drc_routed.pb -rpx system_design_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_design_wrapper_methodology_drc_routed.rpt -pb system_design_wrapper_methodology_drc_routed.pb -rpx system_design_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/impl_1/system_design_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file system_design_wrapper_power_routed.rpt -pb system_design_wrapper_power_summary_routed.pb -rpx system_design_wrapper_power_routed.rpx
+Command: report_power -file system_design_wrapper_power_routed.rpt -pb system_design_wrapper_power_summary_routed.pb -rpx system_design_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+125 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file system_design_wrapper_route_status.rpt -pb system_design_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_design_wrapper_timing_summary_routed.rpt -pb system_design_wrapper_timing_summary_routed.pb -rpx system_design_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_design_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_design_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_design_wrapper_bus_skew_routed.rpt -pb system_design_wrapper_bus_skew_routed.pb -rpx system_design_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-208] The XPM instance: <system_design_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_design_i/i2s_transmitter_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_design_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_design_i/i2s_receiver_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/INTERLEAVED.second_level_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_design_i/audio_formatter_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_design_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <system_design_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/INTERLEAVED.interleaved_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_design_i/audio_formatter_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force system_design_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 15 net(s) have no routable loads. The problem bus(es) and/or net(s) are system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, and system_design_i/mem_interconnect/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_design_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+150 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 2170.152 ; gain = 431.496
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 22:31:14 2024...

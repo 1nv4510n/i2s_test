@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\invasion\XilinxProjects\i2s_test\i2s_test.sdk\fsbl\Debug\fsbl.elf
+	C:\Users\invasion\XilinxProjects\i2s_test\i2s_test.sdk\system_design_wrapper_hw_platform_0\system_design_wrapper.bit
+	E:\VirtualBoxVms\shared\u-boot.elf
+}

@@ -1,0 +1,1265 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 13 21:40:48 2024
+# Process ID: 12916
+# Current directory: C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/system_design_i2s_receiver_0_0_synth_1
+# Command line: vivado.exe -log system_design_i2s_receiver_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_design_i2s_receiver_0_0.tcl
+# Log file: C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/system_design_i2s_receiver_0_0_synth_1/system_design_i2s_receiver_0_0.vds
+# Journal file: C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/system_design_i2s_receiver_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_design_i2s_receiver_0_0.tcl -notrace
+Command: synth_design -top system_design_i2s_receiver_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4572 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 722.008 ; gain = 178.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_design_i2s_receiver_0_0' [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_i2s_receiver_0_0/synth/system_design_i2s_receiver_0_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:958]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (1#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (4#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (5#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized1' (5#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_pulse' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:715]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (5#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_pulse' (6#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:715]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_pulse__parameterized0' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:715]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized1' (6#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_pulse__parameterized0' (6#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:715]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2025]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 35 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 35 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 2 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 512 - type: integer 
+	Parameter FIFO_SIZE bound to: 17920 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 6 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 9 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b1 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 7 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 507 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 507 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 10 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 10 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0001111100011111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b1 
+	Parameter EN_WACK bound to: 1'b1 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b1 
+	Parameter EN_DVLD bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (7#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (7#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 17920 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 35 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 35 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 35 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 35 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 35 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 35 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 35 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 35 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 512 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 35 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 35 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: no - type: string 
+	Parameter rsta_loop_iter bound to: 36 - type: integer 
+	Parameter rstb_loop_iter bound to: 36 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 35 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2882]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (8#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:358]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (9#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1766]
+	Parameter REG_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (10#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1766]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (10#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1766]
+	Parameter REG_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (10#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1766]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (10#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1788]
+	Parameter RST_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (11#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1788]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1187]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1233]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1244]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (11#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1504]
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_safe_state = "default_state" *) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1572]
+INFO: [Synth 8-5534] Detected attribute (* fsm_safe_state = "default_state" *) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1578]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter DEF_VAL bound to: 1'b0 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1111]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (12#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (13#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1504]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (13#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (13#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:523]
+WARNING: [Synth 8-6014] Unused sequential element gen_pf_ic_rc.gae_ic_std.ram_aempty_i_reg was removed.  [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:742]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-4471] merging register 'gen_fwft.empty_fwft_fb_reg' into 'gen_fwft.empty_fwft_i_reg' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1292]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1292]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (14#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (15#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2025]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'system_design_i2s_receiver_0_0' (20#1) [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_i2s_receiver_0_0/synth/system_design_i2s_receiver_0_0.sv:57]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port sleep
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port rsta
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port regcea
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectsbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectdbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[34]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[33]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[32]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[31]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[30]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[29]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[28]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[27]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[26]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[25]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[24]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[23]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[22]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[21]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[20]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[19]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[18]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[17]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[16]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[15]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[14]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[13]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[12]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[11]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[10]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[9]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[8]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[7]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[6]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[5]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[4]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[3]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[2]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[1]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[0]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectsbiterrb
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectdbiterrb
+WARNING: [Synth 8-3331] design xpm_cdc_single__parameterized1 has unconnected port src_clk
+WARNING: [Synth 8-3331] design xpm_cdc_single__parameterized0 has unconnected port src_clk
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3_sys has unconnected port iLRClk
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3_sys has unconnected port iSClk
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3_sys has unconnected port iSData_1
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3_sys has unconnected port iSData_2
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3_sys has unconnected port iSData_3
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 791.379 ; gain = 248.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 791.379 ; gain = 248.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 791.379 ; gain = 248.059
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_i2s_receiver_0_0/system_design_i2s_receiver_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/invasion/XilinxProjects/i2s_test/i2s_test.srcs/sources_1/bd/system_design/ip/system_design_i2s_receiver_0_0/system_design_i2s_receiver_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/system_design_i2s_receiver_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/system_design_i2s_receiver_0_0_synth_1/dont_touch.xdc]
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/genblk1[0].CDC_CHMUX_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/genblk1[0].CDC_CHMUX_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_SCLKDIV_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_SCLKDIV_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_design_i2s_receiver_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_design_i2s_receiver_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_design_i2s_receiver_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_design_i2s_receiver_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_MCLK_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_MCLK_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_LR_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_LR_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_OPMODE_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_OPMODE_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_AESCAPTCHSTS_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_AESCAPTCHSTS_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_AUDOVF_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/CDC_AUDOVF_INST/xpm_cdc_single_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_design_i2s_receiver_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_design_i2s_receiver_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_design_i2s_receiver_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_design_i2s_receiver_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 935.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 938.645 ; gain = 3.109
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/system_design_i2s_receiver_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/\genblk1[0].CDC_CHMUX_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_SCLKDIV_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_MCLK_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_LR_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_OPMODE_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_AESBLKCMPLT_INST/xpm_cdc_single_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_AUDOVF_INST/xpm_cdc_single_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/CDC_AESCAPTCHSTS_INST/xpm_cdc_single_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stmWrite_reg' in module 'i2s_receiver_v1_0_3_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'stmRead_reg' in module 'i2s_receiver_v1_0_3_axi'
+INFO: [Synth 8-5546] ROM "oAxi_BResp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rEnable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rValidity" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rSclkDiv" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rIrqEnables" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rChannelMux_01" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rChannelMux_23" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rChannelMux_45" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rChannelMux_67" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rAesChannelStatus" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ReadAddrNOK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "stmWrite" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "stmRead" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:853]
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'stmAesEncode_reg' in module 'i2s_receiver_v1_0_3_aes_enc'
+INFO: [Synth 8-802] inferred FSM for state register 'stmFIFOWriteCtrl_reg' in module 'i2s_receiver_v1_0_3_sys'
+INFO: [Synth 8-5545] ROM "stmFIFOWriteCtrl" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             sWriteReset |                               00 | 00000000000000000000000000000000
+              sWriteAddr |                               01 | 00000000000000000000000000000001
+              sWriteData |                               10 | 00000000000000000000000000000010
+              sWriteResp |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stmWrite_reg' using encoding 'sequential' in module 'i2s_receiver_v1_0_3_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              sReadReset |                             0001 | 00000000000000000000000000000000
+               sReadAddr |                             0010 | 00000000000000000000000000000001
+             sDecodeAddr |                             0100 | 00000000000000000000000000000010
+               sReadData |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stmRead_reg' using encoding 'one-hot' in module 'i2s_receiver_v1_0_3_axi'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   sIdle |                              001 | 00000000000000000000000000000000
+         sWaitForCh0Sync |                              010 | 00000000000000000000000000000001
+                    sRun |                              100 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stmAesEncode_reg' using encoding 'one-hot' in module 'i2s_receiver_v1_0_3_aes_enc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   sIdle |                              001 | 00000000000000000000000000000000
+         sWaitForI2sSync |                              010 | 00000000000000000000000000000001
+            sWriteToFIFO |                              100 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stmFIFOWriteCtrl_reg' using encoding 'one-hot' in module 'i2s_receiver_v1_0_3_sys'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 2     
+	   4 Input      9 Bit       Adders := 5     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   4 Input      2 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     10 Bit         XORs := 2     
+	   2 Input      9 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 41    
++---Registers : 
+	              192 Bit    Registers := 6     
+	               35 Bit    Registers := 2     
+	               32 Bit    Registers := 9     
+	               31 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               10 Bit    Registers := 15    
+	                9 Bit    Registers := 14    
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 70    
++---RAMs : 
+	              17K Bit         RAMs := 1     
++---Muxes : 
+	  19 Input    192 Bit        Muxes := 1     
+	  19 Input     32 Bit        Muxes := 1     
+	  18 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 10    
+	   4 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 9     
+	  18 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 37    
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 132   
+	   4 Input      1 Bit        Muxes := 22    
+	  18 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module i2s_receiver_v1_0_3_timgen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module i2s_receiver_v1_0_3_axi 
+Detailed RTL Component Info : 
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               31 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	  19 Input    192 Bit        Muxes := 1     
+	  19 Input     32 Bit        Muxes := 1     
+	  18 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 15    
+	  18 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 12    
+Module xpm_cdc_array_single__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+Module xpm_cdc_single 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module xpm_cdc_array_single__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	              192 Bit    Registers := 3     
+Module xpm_cdc_single__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module xpm_cdc_pulse 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 4     
+Module xpm_cdc_single__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module xpm_cdc_pulse__parameterized0__xdcDup__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 4     
+Module xpm_cdc_pulse__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 4     
+Module xpm_counter_updn 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module xpm_memory_base 
+Detailed RTL Component Info : 
++---Registers : 
+	               35 Bit    Registers := 2     
++---RAMs : 
+	              17K Bit         RAMs := 1     
+Module xpm_cdc_gray 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	                9 Bit    Registers := 3     
+Module xpm_fifo_reg_vec 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module xpm_cdc_gray__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               10 Bit    Registers := 5     
+Module xpm_fifo_reg_vec__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module xpm_cdc_gray__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               10 Bit    Registers := 3     
+Module xpm_fifo_reg_bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module xpm_cdc_sync_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module xpm_fifo_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+Module xpm_counter_updn__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module xpm_fifo_base 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 2     
+	   4 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 31    
+	   4 Input      2 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module i2s_receiver_v1_0_3_aes_enc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 82    
+	   3 Input      1 Bit        Muxes := 3     
+Module xpm_cdc_array_single 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 3     
+Module i2s_receiver_v1_0_3_ser 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module i2s_receiver_v1_0_3_sys 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	   4 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/oAxi_BResp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/ReadAddrNOK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rEnable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rValidity" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rSclkDiv" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rChannelMux_01" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rChannelMux_23" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rChannelMux_45" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rChannelMux_67" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port rsta
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port regcea
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectsbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectdbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[34]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[33]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[32]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[31]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[30]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[29]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[28]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[27]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[26]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[25]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[24]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[23]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[22]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[21]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[20]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[19]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[18]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[17]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[16]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[15]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[14]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[13]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[12]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[11]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[10]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[9]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[8]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[7]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[6]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[5]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[4]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[3]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[2]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[1]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[0]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectsbiterrb
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectdbiterrb
+WARNING: [Synth 8-3331] design xpm_cdc_single__parameterized1 has unconnected port src_clk
+WARNING: [Synth 8-3331] design xpm_cdc_single__parameterized0 has unconnected port src_clk
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3 has unconnected port lrclk_in
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3 has unconnected port sclk_in
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3 has unconnected port sdata_1_in
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3 has unconnected port sdata_2_in
+WARNING: [Synth 8-3331] design i2s_receiver_v1_0_3 has unconnected port sdata_3_in
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[0]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[1]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[2]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[3]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[4]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[5]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[6]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[7]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[8]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[9]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[10]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[11]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[28]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[29]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[30]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/mclk_rWriteData_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[0]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[1]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[2]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[3]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[4] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[4]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[5]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[6] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[6]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[7]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[8] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[8]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[9] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[9]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[10] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[10]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[11] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[11]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[12] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[12]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[13] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[13]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[14] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[14]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[15]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[17]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[18] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[18]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[19] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[19]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[20] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[20]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[21] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[21]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[22] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[22]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[23] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[23]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[24] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[24]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[25] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[25]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[26] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[26]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[27] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[27]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[28] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[28]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[29] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[29]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqStatus_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rIrqEnables_reg[30] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[30]' (FDRE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/rVersionNr_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AES_ENCODER_INST/rAudData_Out_reg[2]' (FDE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AES_ENCODER_INST/rAudData_Out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AES_ENCODER_INST/rAudData_Out_reg[3]' (FDE) to 'inst/I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AES_ENCODER_INST/rAudData_Out_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AES_ENCODER_INST/rAudData_Out_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/oAxi_RResp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\I2S_RX_V1_0_SYS_INST/I2S_RX_V1_0_AXI_INST/oAxi_BResp_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | 512 x 35(NO_CHANGE)    | W |   | 512 x 35(NO_CHANGE)    |   | R | Port A and B     | 1      | 0      | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | 512 x 35(NO_CHANGE)    | W |   | 512 x 35(NO_CHANGE)    |   | R | Port A and B     | 1      | 0      | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    34|
+|2     |LUT1       |    25|
+|3     |LUT2       |   146|
+|4     |LUT3       |    98|
+|5     |LUT4       |    90|
+|6     |LUT5       |   104|
+|7     |LUT6       |   229|
+|8     |MUXF7      |    24|
+|9     |MUXF8      |    12|
+|10    |RAMB18E1_1 |     1|
+|11    |FDRE       |  1839|
+|12    |FDSE       |    23|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+-----------------------------------------+------+
+|      |Instance                                         |Module                                   |Cells |
++------+-------------------------------------------------+-----------------------------------------+------+
+|1     |top                                              |                                         |  2625|
+|2     |  inst                                           |i2s_receiver_v1_0_3                      |  2625|
+|3     |    I2S_RX_V1_0_SYS_INST                         |i2s_receiver_v1_0_3_sys                  |  2625|
+|4     |      CDC_SCLKDIV_INST                           |xpm_cdc_array_single__parameterized0     |    24|
+|5     |      CDC_LR_INST                                |xpm_cdc_single__5                        |     3|
+|6     |      CDC_OPMODE_INST                            |xpm_cdc_single__6                        |     3|
+|7     |      CDC_ENABLE_MCLK_INST                       |xpm_cdc_single__7                        |     3|
+|8     |      CDC_ENABLE_AXIS_INST                       |xpm_cdc_single__8                        |     3|
+|9     |      CDC_VALIDITY_AXIS_INST                     |xpm_cdc_single                           |     3|
+|10    |      CDC_AESCHSTS_INST                          |xpm_cdc_array_single__parameterized1     |   576|
+|11    |      CDC_AESCAPTCHSTS_INST                      |xpm_cdc_pulse                            |    10|
+|12    |        xpm_cdc_single_inst                      |xpm_cdc_single__parameterized0           |     4|
+|13    |      CDC_AESBLKCMPLT_INST                       |xpm_cdc_pulse__parameterized0__xdcDup__1 |     8|
+|14    |        xpm_cdc_single_inst                      |xpm_cdc_single__parameterized1__2        |     2|
+|15    |      CDC_AUDOVF_INST                            |xpm_cdc_pulse__parameterized0            |     9|
+|16    |        xpm_cdc_single_inst                      |xpm_cdc_single__parameterized1           |     2|
+|17    |      \genblk1[0].CDC_CHMUX_INST                 |xpm_cdc_array_single                     |     9|
+|18    |      AXIS_FIFO_INST                             |i2s_receiver_v1_0_3_async_fifo           |   591|
+|19    |        xpm_fifo_async_inst                      |xpm_fifo_async                           |   576|
+|20    |          \gnuram_async_fifo.xpm_fifo_base_inst  |xpm_fifo_base                            |   576|
+|21    |            \gen_sdpram.xpm_memory_base_inst     |xpm_memory_base                          |     1|
+|22    |            \gen_cdc_pntr.wr_pntr_cdc_inst       |xpm_cdc_gray__2                          |    43|
+|23    |            \gen_cdc_pntr.wr_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0             |    68|
+|24    |            \gen_cdc_pntr.rd_pntr_cdc_inst       |xpm_cdc_gray                             |    43|
+|25    |            \gen_cdc_pntr.rd_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized1             |    48|
+|26    |            \gaf_wptr_p3.wrpp3_inst              |xpm_counter_updn                         |    20|
+|27    |            \gen_cdc_pntr.rpw_gray_reg           |xpm_fifo_reg_vec                         |    23|
+|28    |            \gen_cdc_pntr.rpw_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0         |    10|
+|29    |            \gen_cdc_pntr.wpr_gray_reg           |xpm_fifo_reg_vec_0                       |    11|
+|30    |            \gen_cdc_pntr.wpr_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0_1       |    21|
+|31    |            \gen_fwft.rdpp1_inst                 |xpm_counter_updn__parameterized1         |     8|
+|32    |            rdp_inst                             |xpm_counter_updn__parameterized2         |    66|
+|33    |            rdpp1_inst                           |xpm_counter_updn__parameterized3         |    23|
+|34    |            rst_d1_inst                          |xpm_fifo_reg_bit                         |     4|
+|35    |            wrp_inst                             |xpm_counter_updn__parameterized2_2       |    35|
+|36    |            wrpp1_inst                           |xpm_counter_updn__parameterized3_3       |    32|
+|37    |            wrpp2_inst                           |xpm_counter_updn__parameterized0         |    20|
+|38    |            xpm_fifo_rst_inst                    |xpm_fifo_rst                             |    41|
+|39    |              \gen_rst_ic.wrst_rd_inst           |xpm_cdc_sync_rst__2                      |     2|
+|40    |              \gen_rst_ic.rrst_wr_inst           |xpm_cdc_sync_rst                         |     2|
+|41    |      I2S_RX_V1_0_AES_ENCODER_INST               |i2s_receiver_v1_0_3_aes_enc              |   587|
+|42    |      I2S_RX_V1_0_AXI_INST                       |i2s_receiver_v1_0_3_axi                  |   479|
+|43    |      I2S_RX_V1_0_TIMGEN_INST                    |i2s_receiver_v1_0_3_timgen               |   102|
+|44    |      \genblk3[0].I2S_RX_V1_0_SER_INST           |i2s_receiver_v1_0_3_ser                  |   108|
++------+-------------------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 938.645 ; gain = 395.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 938.645 ; gain = 248.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 938.645 ; gain = 395.324
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 938.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+242 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 938.645 ; gain = 639.238
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 938.645 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/system_design_i2s_receiver_0_0_synth_1/system_design_i2s_receiver_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_design_i2s_receiver_0_0, cache-ID = 25fd9e7e5cb0ec4e
+INFO: [Coretcl 2-1174] Renamed 43 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 938.645 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/invasion/XilinxProjects/i2s_test/i2s_test.runs/system_design_i2s_receiver_0_0_synth_1/system_design_i2s_receiver_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_design_i2s_receiver_0_0_utilization_synth.rpt -pb system_design_i2s_receiver_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 21:41:26 2024...
